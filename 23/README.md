@@ -1,6 +1,6 @@
-# 23. Веб-сервер на Ubuntu с нуля: nginx, HTTP/2, brotli и HTTPS
+# Веб-сервер на Ubuntu с нуля: nginx, HTTP/2, brotli и HTTPS
 
-[Видео](https://youtu.be/oanbIqkS9LM)
+[Подробнее в видео](https://youtu.be/oanbIqkS9LM)
 
 Проверено на Ubuntu 18.04.4 LTS
 
@@ -77,11 +77,16 @@ ssh USER@IP
 mkdir -p ~/.ssh
 ```
 
-Вводим ключ
+Выводим и копируем локальный ключ
+
+```
+cat ~/.ssh/id_rsa.pub
+```
+
+Вставляем его на сервере
 
 ```
 nano ~/.ssh/authorized_keys
-cat ~/.ssh/id_rsa.pub | pbcopy
 ```
 
 Выставляем права
